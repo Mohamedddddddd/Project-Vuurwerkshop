@@ -1,0 +1,9 @@
+SELECT Artiest, Titel, n2017, n2016, n2016-n2017 as verschil
+From Top2000
+Where n2016 < n2017
+And n2016 < 50
+
+SELECT artiest, Count(*)
+From top2000
+Group by Artiest
+Having Count(*) > 10

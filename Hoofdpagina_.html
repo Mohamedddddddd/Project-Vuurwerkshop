@@ -1,0 +1,105 @@
+
+<html>
+<head>
+<title>Opdracht 4</title>
+
+
+  <script type="text/javascript">
+<!-- Javascript waarmee alles geladen wordt. !->
+<!-- Asynchronous JavaScript And XML (*j*x) !->
+
+function maakXMLObj()
+{
+   var objXml = false; 
+   try
+   {
+    // Firefox, Opera 8.0+, Safari
+    objXml = new XMLHttpRequest();
+   }
+   catch (e)
+   {
+    // Internet Explorer
+     try
+     {
+       objXml = new ActiveXObject("Msxml2.XMLHTTP");
+     }
+     catch (e)
+     {
+       try
+       {
+         objXml = new ActiveXObject("Microsoft.XMLHTTP");
+       }
+         catch (e)
+       {
+         alert("Je browser ondersteund geen *j*x!");
+         return false;
+       }
+     }
+   }
+   return objXml;
+}
+ 
+function VeranderContent ( target, content ) {
+  var xmlHttp = maakXMLObj();
+ 
+  xmlHttp.open ( "GET", content, true );
+  xmlHttp.onreadystatechange = function () {
+    if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ) {
+      document.getElementById(target).innerHTML = xmlHttp.responseText;
+    }
+  }
+  xmlHttp.send(null);
+}
+ 
+</script>
+  </head>
+  <body>
+<div id="menu">
+<h1>Menu </h1><br/>
+
+<a href="#" title="Pagina A" id="A" OnClick="VeranderContent('content', 'Pagina1.html')">Website webhosting</a> <br />
+<a href="#" title="Pagina B" id="B" OnClick="VeranderContent('content', 'Pagina2.html')">Webhosting</a> <br />
+<a href="#" title="Pagina C" id="C" OnClick="VeranderContent('content', 'Pagina3.html')">verschillende webhosting</a>
+<br>
+<a href="#" title="Pagina C" id="C" OnClick="VeranderContent('content', 'Pagina4extrapaginaformulieren.html')">Contacten</a>
+
+ </div><br/>
+<div id="content">
+<h1>Informatie</h1>
+<ul> <li>Welkom</li>
+  <li>op</li>
+  <li>de</li>
+  <li>website</li>
+  <li>van</li>
+  <li>Mohamed</li>
+  <br>
+<br>
+  <img src="https://www.mupload.nl/img/57rht4z7zxydw.jpg""  width="300" height="300" border="4"/>
+<br>
+<br>
+<p>Webhosting is een dienst die particulieren of bedrijven ruimte aanbiedt voor het opslaan van informatie, afbeeldingen, of andere inhoud die toegankelijk is via een website.</p></ul>
+<br>
+
+</div>
+
+<h5> Mail Link:</h5>
+<A HREF="mailto: M_zeriouhi@hotmail.com">
+M_zeriouhi@hotmail.com</A>
+<h5> Telefoonnummer Link: </h5>
+<a href="tel:+31639780706">+31 (6)39 - 780 706 </a>
+
+
+
+
+  <h2>Iframe</h2>
+
+<iframe src="Iframe.html" width="200" height="100" wmode="transparent" style="border:0px; overflow-x:hidden;">
+</iframe>
+
+</body>
+</html>
+  
+  
+  
+</html>
+

@@ -1,0 +1,24 @@
+De kernel is het centrum van het besturingssysteem.
+Distributie van linux
+alle 3 zijn goed
+
+terminal openen ctrl alt f2
+
+ctrl alt f7 terminal sluiten
+
+met welke commando kun je directory veranderen / CD
+
+software managment starten met Yast
+
+met welke commando root home map /su
+
+met welke commando kun je 1 map omhoog- cd..
+
+welke apparaten werken op linux=
+alle antwoorden zijn juist
+
+welke mapnaam word gebruikt voor uitvoerbare bestanden
+
+/bin
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE>
+
+<html>
+<head>
+<title> Formulier</title>
+<style>
+body{background-color: aqua;}
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+</style>
+</head>
+
+<body>
+
+<div id="form">
+
+<form action="Tramenquete.php" method="post">
+
+<p>
+<input type="submit" value="Verzenden met submit"></br></br>
+<input type="reset" value="Reset: niet gebruiken"></br></br>
+<input type="button" value="Button voor eigen functies">
+</p>
+
+ <form>
+ 
+ 
+
+ <p>Naam:
+<input type="text"  name="naam" pattern=".{2,}" title="hans" placeholder="Typ hier uw naam"  required/>*</p>
+<p>Is er veel geluidoverlast in de tram?<br>
+  <input type="checkbox" name="Geluidoverlast" id="Geluidoverlast" value="Ja"> Ja<br>
+  <input type="checkbox" name="Geluidoverlast" id="Geluidoverlast" value="Nee"> Nee<br>
+  <input type="checkbox" name="Geluidoverlast" id="Geluidoverlast" value="Geen mening"> Geen mening <br>
+  
+  <p>Is er genoeg zit ruimte in de tram?</p>
+  <input type="radio" name="Zitruimte" id="Zitruimte" value="Ja"> Ja<br>
+  <input type="radio" name="Zitruimte" id="Zitruimte" value="Nee"> Nee<br>
+  <input type="radio" name="Zitruimte" id="Zitruimte" value="Geen mening opinion"> Geen mening
+
+  <p>Is de tram op tijd?</p>
+  <input type="checkbox" name="Timing" id="Timing" value="Ja"> Ja<br>
+  <input type="checkbox" name="Timing" id="Timing" value="Nee"> Nee<br>
+  <input type="checkbox" name="Timing" id="Timing" value="Geen mening"> Geen mening
+
+    <p>Zijn de personelen klantvriendelijk?</p>
+  <input type="radio" name="Klantvriendelijkheid" id="Klantvriendelijkheid" value="Ja"> Ja<br>
+  <input type="radio" name="Klantvriendelijkheid" id="Klantvriendelijkheid" value="Nee"> Nee<br>
+  <input type="radio" name="Klantvriendelijkheid" id="Klantvriendelijkheid" value="Geen mening"> Geen mening
+
+</form> 
+
+
+

@@ -1,0 +1,56 @@
+
+<html>
+<head>
+<title> Formulier</title>
+<style>
+body{background-color: aqua;}
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+</style>
+</head>
+
+<body>
+<div id="form">
+<form action="Contactwigmans.php" method="post">
+
+<p>
+<input type="submit" value="Verzenden met submit"></br></br>
+<input type="reset" value="Reset: niet gebruiken"></br></br>
+<input type="button" value="Button voor eigen functies">
+</p>
+<h3> Neem contact met ons op en ontvang binnen 2 dagen een mail terug</h3>
+<p>Naam:
+<input type="text"  name="naam" pattern=".{2,}" title="hans" placeholder="Typ hier uw naam"  required/>*</p>
+<p>E-mail:
+<input type="email" name="email" onClick="this.value=''" value="Voer hier uw e-mail.." required />*</p>
+<br>
+<p>Heeft u nog opmerkingen?</p>
+<p><textarea rows="7" cols="60" id="opmerkingen" name="opmerkingen" placeholder="Geef hier uw opmerkingen">
+</textarea></p>
+<p>Heeft u nog vragen?</p>
+<p><textarea rows="7" cols="60" id="vragen" name="vragen" placeholder="Geef hier uw vragen">
+</textarea></p>
+<br>
+<p> Wat is uw geslacht? <br>
+<form name="Geslacht" action="" method="post">
+<input type="radio" name="man" id="man" value="man"> man<br>
+<input type="radio" name="vrouw" id="vrouw"  value="vrouw" checked> vrouw</br>
+<p> Wat is uw leeftijd? <br>
+<form name="Leeftijd" action="" method="post">
+<input type="radio" name="onder18" id="onder18" value="onder18"> onder18</br>
+<input type="radio" name="boven18" id="boven18" value="boven18"> boven18</br>
+
+  <div id="content"> </div>
+  <form name="formulier" action="" method="post">
+Wat vind u van onze website? (selectveld)</br></br>
+    <select name="beoordeling">
+    <option value="Super" selected="selected">Super site</option>
+    <option value="Goed">Goed</option>
+    <option value="Voldoende" >Voldoende</option>
+    <option value="Matig">Matig</option>
+    <option value="Slecht">Slecht</option>
+    </select> 
+	
+	</html
+

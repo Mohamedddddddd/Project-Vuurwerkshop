@@ -1,0 +1,10 @@
+SET !ERRORIGNORE YES
+VERSION BUILD=10.3.27.5830
+TAB T=1
+URL GOTO=https://www.mafiaway.nl/profile.php?x=Mallejan
+SET !EXTRACT_TEST_POPUP NO
+TAG POS=26 TYPE=TD ATTR=CLASS:maintxt EXTRACT=TXT
+TAG POS=28 TYPE=TD ATTR=CLASS:maintxt EXTRACT=TXT
+ADD !EXTRACT +{{!NOW:ddhhnnss}}
+SAVEAS TYPE=EXTRACT FOLDER=C:huntbot FILE=Mallejan+{{!NOW:ddmm}}.txt
+wait seconds=1

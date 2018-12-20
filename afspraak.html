@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>Agenda</title>
+ </head>
+<body>
+<style>
+
+body {background-color:Lightgreen;}
+<style>
+<h1>Titel Afspraak</h1>
+
+<?php
+
+
+$file = fopen('voorbeeld.csv', 'r');
+while(!feof($file)) {
+
+$line = fgetcsv($file, 1000, ",");
+
+echo $line [0]; 
+echo $line [1]; 
+echo $line [2];
+echo "<br>";
+
+
+																																																	
+  //$line is an array of the csv elements
+}
+fclose($file);
+
+echo "<table>"
+echo "<tr>"
+<th>Datum</th>
+<th>Afspraak</th>
+<th>Adres</th>
+</tr>
+<tr>
+<td>', $Datum,'</td>
+<td>', $Afspraak,'</td>
+<td>', $Adres,'</td>
+
+</tr>
+</table>';
+</body>
+
+?>
+
+
+
+</html>

@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<title> Formulier</title>
+<style>
+body{background-color: aqua;}
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+</style>
+</head>
+
+<body>
+<div id="form">
+<form action="Resultaatform.php" method="post">
+<p>
+<input type="submit" value="Verzenden met submit"></br></br>
+<input type="reset" value="Reset: niet gebruiken"></br></br>
+<input type="button" value="Button voor eigen functies">
+</p>
+<h3> Neem contact met ons op en ontvang binnen 2 dagen een mail terug</h3>
+<p>Naam:
+<input type="text"  name="naam" pattern=".{2,}" title="hans" placeholder="Typ hier uw naam"  required/>*</p>
+<p>E-mail:
+<input type="email" name="email" onClick="this.value=''" value="Voer hier uw e-mail.." required />*</p>
+<p>Heeft u nog opmerkingen?</p>
+<p><textarea rows="7" cols="60" id="opmerkingen" name="opmerkingen" placeholder="Geef hier uw opmerkingen.">
+</textarea></p>
+
+

@@ -1,0 +1,70 @@
+<html>
+<head>
+<title> Bestel Formulier</title>
+<style>
+body{background-color: aqua;}
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+</style>
+</head>
+
+<body>
+
+<h2> Slim Jeans Men met slim T-shirt men bestelling </h2>
+ <img src="http://i66.tinypic.com/2wrql48.jpg""  width="400" height="300" border="4"/>
+ <br>
+<h4>Klik op de juiste maat </h4>
+ 
+<form name="formulier" action="" method="post">
+    <select name="beoordeling"> 
+	<option value="27-30">27-30</option>
+	<option value="30-32">30-32</option>
+    <option value="32-36">32-36</option>
+    <option value="36-36">36-36</option>
+   
+    </select> 
+	</form>
+	
+	<h2> Slim T-shirt men bestelling </h2>
+ <img src="https://www.mupload.nl/img/50tne2eym42n.jpg""  width="450" height="300" border="4"/>
+ <br>
+<h4>Klik op de juiste maat </h4>
+ 
+<form name="formulier" action="" method="post">
+ <p> <br>
+  <input type="checkbox" name="M" id=M"" value="M"> M<br>
+  <input type="checkbox" name="L" id="L" value="L"> L<br>
+  <input type="checkbox" name="XL" id="XL" value="XL"> XL<br>
+
+	</form>
+<div id="form">
+<form action="Bestelformulier.php" method="post">
+<h1> Gegevens invullen</h1>
+<p>Naam en achternaam
+<p><textarea rows="2" cols="50" id="naam" name="naam" placeholder="Geef hier uw naam neer..">
+</textarea></p>
+<p>E-mail:
+<p><textarea rows="2" cols="50" id="email" name="email" placeholder="Geef hier uw e-mail op..">
+</textarea></p>
+<p>Volledige Adres
+<p><textarea rows="2" cols="50" id="adres" name="adres" placeholder="Geef hier uw adres op..">
+</textarea></p>
+<p>Rekeningnummer
+<p><textarea rows="2" cols="50" id="rekeningnummer" name="rekeningnummer" placeholder="Geef hier uw rekeningnummer..">
+</textarea></p>
+<p>Heeft u nog opmerkingen?</p>
+<p><textarea rows="7" cols="60" id="opmerkingen" name="opmerkingen" placeholder="Geef hier uw opmerkingen.">
+</textarea></p>
+<p>
+<input type="submit" value="Verzenden met submit"></br></br>
+<input type="reset" value="Reset: niet gebruiken"></br></br>
+<input type="button" value="Button voor eigen functies">
+</form>
+
+</p>
+<h5> Bestelling verzenden bovenaan!<br>
+Binnen 5 dagen verzonden!</h5>
+</body>
+</html>
+
